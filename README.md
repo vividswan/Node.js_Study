@@ -9,4 +9,4 @@
 
 #### 소스코드
 - study
-    - 포트를 활용한 "Hello World" 예제와 각 코드에 대한 주석설명(study/webserver.js)
+    - 웹 서버 생성 "Hello World" 예제와 각 코드에 대한 주석설명(study/webserver.js)
