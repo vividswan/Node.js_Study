@@ -1,0 +1,19 @@
+{
+  "name": "node.js_study",
+  "version": "1.0.0",
+  "description": "server side javascript tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vividswan/Node.js_Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vividswan/Node.js_Study/issues"
+  },
+  "homepage": "https://github.com/vividswan/Node.js_Study#readme"
+}
