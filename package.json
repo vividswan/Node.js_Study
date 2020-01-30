@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vividswan/Node.js_Study/issues"
   },
-  "homepage": "https://github.com/vividswan/Node.js_Study#readme"
+  "homepage": "https://github.com/vividswan/Node.js_Study#readme",
+  "dependencies": {
+    "underscore": "^1.9.2"
+  }
 }
