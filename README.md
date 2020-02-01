@@ -14,3 +14,4 @@ Node.js study()
 - study
   - 웹 서버 생성 "Hello World" 예제와 각 코드에 대한 주석설명(study/webserver.js)
   - 모듈 설치에 관한 명령어 및 underscore 설치 후 사용해보기(study/underscore.js)
+  - 동기와 비동기(sync, async) 간단한 예제 출력(study/sync_async.js, study/data.txt)
