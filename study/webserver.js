@@ -5,6 +5,8 @@ const port = 3000; // 3000번 째 port 변수
 
 const server = http.createServer((req, res) => {
   // createServer로 서버를 만듬
+  // req => request(요청)
+  // res => response(응답)
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
   res.end("Hello World"); // 응답 결과
