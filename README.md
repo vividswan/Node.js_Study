@@ -5,9 +5,7 @@ Node.js study()
 
 ## Node.js와 관련된 스터디를 하고 관련 코드를 기록하는 레포지터리입니다.
 
-### study
-
-### express_practice
+### study<br>express_practice
 
 ---
 
