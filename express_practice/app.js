@@ -11,6 +11,30 @@ app.get("/", function(req, res) {
 }); // home으로 접속하면 function이 보내는 인자(request, response)가 실행
 // request => 요청에 대한 객체, response => 응답에 대한 객체
 
+app.get("/dynamic", function(req, res) {
+  var lis = "";
+  for (var i = 0; i < 5; i++) {
+    lis = lis + "<li>coding</li>";
+  }
+  var time = Date();
+  var output = `
+  <!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+      <h1>Hello, Dynamic!</h1>
+      <ul>
+      ${lis}
+      </ul>
+      ${time}
+  </body>
+</html>
+`;
+  res.send(output);
+});
+
 app.get("/route", function(req, res) {
   res.send('Hello Router, <img src="/sampleImage.jpg">');
 });
