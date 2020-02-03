@@ -1,10 +1,17 @@
 var express = require("express"); // express 라는 모듈을 로드
 var app = express(); // express 모듈이 application return, express의 규칙임(특정 원리 x)
+app.locals.pretty = true; // jade express code pretty
+app.set("view engine", "jade"); // jade를 setting
+app.set("views", "./views"); // jade 파일이 들어있는 디렉토리(관습적으로 views)
 app.use(express.static("public"));
 // 정적인 파일이 위취할 디렉토리를 지정하는 기능(관습적으로 public)
 
 // get method : router라 부르고 routing(길을 찾는다.)한다고 함 => 요청이 들어왔을 때 연결해주는 역할
 
+app.get("/template", function(req, res) {
+  res.render("temp", { time: Date(), _title: "Jade" });
+  // 2번 째 인자는 jade 파일 안에 있는 변수로 전달(데이터주입)
+});
 app.get("/", function(req, res) {
   // get => 사용자가 웹서버에 접속하는 방식 중 하나(url을 치고 접속하는 방식)
   res.send("Hello home page");
