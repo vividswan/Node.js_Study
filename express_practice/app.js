@@ -1,10 +1,41 @@
 var express = require("express"); // express 라는 모듈을 로드
 var app = express(); // express 모듈이 application return, express의 규칙임(특정 원리 x)
+var bodyParser = require("body-parser");
 app.locals.pretty = true; // jade express code pretty
 app.set("view engine", "jade"); // jade를 setting
 app.set("views", "./views"); // jade 파일이 들어있는 디렉토리(관습적으로 views)
 app.use(express.static("public"));
 // 정적인 파일이 위취할 디렉토리를 지정하는 기능(관습적으로 public)
+app.use(bodyParser.urlencoded({ extended: false }));
+// bodyParser 모듈을 app 객체에 use
+app.get("/form", function(req, res) {
+  res.render("form");
+});
+app.get("/form_receiver", function(req, res) {
+  var title = req.query.title;
+  var description = req.query.description;
+  res.send(title + "," + description);
+});
+app.post("/form_receiver", function(req, res) {
+  var title = req.body.title;
+  var description = req.body.description;
+  res.send(title + "," + description);
+});
+app.get("/topic/:id", function(req, res) {
+  // req.query.id => query라는 객체에 id라는 property
+  var topics = ["Javascript is ...", "Nodejs is...", "Express is..."];
+  var output = `
+    <a href="/topic/0">JavaScript</a><br>
+    <a href="/topic/1">Nodejs</a><br>
+    <a href="/topic/2">Express</a><br><br>
+    ${topics[req.params.id]}
+  `;
+  res.send(output);
+});
+
+app.get("/topic/:id/:mode", function(req, res) {
+  res.send(req.params.id + "," + req.params.mode);
+});
 
 // get method : router라 부르고 routing(길을 찾는다.)한다고 함 => 요청이 들어왔을 때 연결해주는 역할
 
