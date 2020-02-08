@@ -20,3 +20,4 @@ Node.js study()
 - express
   - app.js(엔트리파일) 생성 및 router 연결(express_practice/app.js)
   - template engine이 작동하는 방식과 jade 파일 실습(express_practice/app.js ,express_practice/views/temp.jade)
+  - body-parser 설치 후 app.post 실습(express_practice/app.js ,express_practice/views/form.jade)
