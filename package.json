@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/vividswan/Node.js_Study#readme",
   "dependencies": {
+    "co": "^4.6.0",
+    "mongodb": "^3.5.3",
     "underscore": "^1.9.2"
   }
 }
