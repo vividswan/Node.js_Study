@@ -5,7 +5,7 @@ Node.js study()
 
 ## Node.js와 관련된 스터디를 하고 관련 코드를 기록하는 레포지터리입니다.
 
-### study<br>express_practice
+### study<br>express_practice<br>makeServer_httpModule
 
 ---
 
@@ -19,6 +19,10 @@ Node.js study()
   - co 및 generator 실습 (study/co.js, study/generator.js)
 
 - express
+
   - app.js(엔트리파일) 생성 및 router 연결(express_practice/app.js)
   - template engine이 작동하는 방식과 jade 파일 실습(express_practice/app.js ,express_practice/views/temp.jade)
   - body-parser 설치 후 app.post 실습(express_practice/app.js ,express_practice/views/form.jade)
+
+- makeServer_httpModule
+  - 간단한 서버 실행 (makeServer_httpModule/server1.js)
