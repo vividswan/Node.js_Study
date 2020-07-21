@@ -1,15 +1,19 @@
-# Java_Study
+# JavaScipt & Node.js
 
-Node.js study()
 <br>
 
-## Node.js와 관련된 스터디를 하고 관련 코드를 기록하는 레포지터리입니다.
+## JavaScipt & Node.js와 관련된 스터디를 하고 관련 코드를 기록하는 레포지터리입니다.
 
-### study<br>express_practice<br>makeServer_httpModule
+### JavaScipt<br>study<br>express_practice<br>makeServer_httpModule
 
 ---
 
 #### 소스코드
+
+- JavaScipt
+
+  - 호이스팅(Hoisting)에 대한 설명과 예제(JavaScipt/호이스팅(Hoisting))
+  - SetTimeout을 이용한 비동기 예제(JavaScipt/SetTimeout과 비동기)
 
 - study
 
