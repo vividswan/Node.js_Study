@@ -80,3 +80,45 @@ let mapTest = test.map(function (value, index) {
 console.log(mapTest);
 // [ 2, 4, 6, 8, 10 ]
 ```
+
+## 객체 (JavaScript object)
+
+- key와 value 값으로 선언
+- 순서가 없음
+- {}로 자료를 표현
+- value 안에 또 다른 객체가 들어갈 수 있음
+- 객체.key 혹은 객체["key"]로 value 값을 찾을 수 있음
+- for(value in 객체)의 형식으로도 사용할 수 있다.
+  - 객체[value]로 객체 안의 value들을 탐색할 수 있다.
+- Object.keys(객체)로 key 값을 출력할 수 있다.
+
+```javascript
+let test = {
+  name: "vividswan",
+  age: 29,
+  info: { num: [1, 2, 3, 4], str: "abcde" },
+};
+
+console.log(test.name);
+// vividswan
+console.log(test["age"]);
+// 29
+
+for (value in test) {
+  console.log(test[value]);
+}
+/*
+vividswan
+29
+{ num: [ 1, 2, 3, 4 ], str: 'abcde' }
+*/
+
+Object.keys(test).forEach(function (value) {
+  console.log(test[value]);
+});
+/*
+vividswan
+29
+{ num: [ 1, 2, 3, 4 ], str: 'abcde' }
+*/
+```
