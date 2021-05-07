@@ -19,6 +19,6 @@
   "dependencies": {
     "co": "^4.6.0",
     "mongodb": "^3.5.3",
-    "underscore": "^1.9.2"
+    "underscore": "^1.12.1"
   }
 }
